@@ -6,7 +6,7 @@ image: /assets/images/upworthy-archive-logo-orange-grey.png
 
 # When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions
 
-* [Marianne Aubin Le Quéré](https://mariannealq.com/), * Cornell University*
+* [Marianne Aubin Le Quéré](https://mariannealq.com/), *Cornell University*
 * [J. Nathan Matias](https://natematias.com), *Cornell University* (ongoing contact)
 
 > “The curiosity gap: too vague, and I don’t care, but too specific, and I don’t need to click the link.” – [Peter Koechley](https://civic.mit.edu/index.html%3Fp=1340.html), Upworthy co-founder
