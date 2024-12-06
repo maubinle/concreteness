@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Upworthy Research Archive
+title: When Curiosity Gaps Backfire
 image: /assets/images/concreteness-logo.jpg
 ---
 
