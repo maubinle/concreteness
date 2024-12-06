@@ -23,7 +23,7 @@ image: /assets/images/concreteness-logo.jpg
 
 Scientists have described that information gaps may arise when people are exposed to medium amounts of information. Think of your desire to know the answer to a trivia question: if you're confident you know the answer, or you have no idea what the answer is, you won't be curious to know the real answer. However, if you think you know what the answer is, you will get that tip-of-the-tongue feeling that makes you need to find out more.
 
-Headline writers have been using this technique for years, stylized as "the curiosity gap." A classic example is the video *Zach Wahls Speaks About Family*, which became viral only after being given the headline:: [*Two Lesbians Raised A Baby And This Is What They Got*](https://front.moveon.org/two-lesbians-raised-a-baby-and-this-is-what-they-got/). 
+Headline writers have been using this technique for years, stylized as "the curiosity gap." A classic example is the video *Zach Wahls Speaks About Family*, which became viral only after being given the headline: [*Two Lesbians Raised A Baby And This Is What They Got*](https://front.moveon.org/two-lesbians-raised-a-baby-and-this-is-what-they-got/). This headline seems designed to pique reader curiosity by obscuring crucial information.
 
 But scholars don't agree about whether curiosity gaps actually work in real life. Previous lab experiments and large-scale data analyses have found conflicting evidence.
 We argue that our metric — which is continuous, not binary — allows us to resolve these accounts.
@@ -33,14 +33,13 @@ So, do these curiosity techniques actually work for attracting more clicks? Shou
 ## What we found
 **Our research shows that the most effective headlines strike a balance between being vague and detailed.** For each headline in our dataset, we modeled the amount of concrete bits of information in the sentence. When all headlines in an experiment are vague, the most concrete headline attracts more clicks. Conversely, when all headlines in an experiment are very detailed, the vaguer headline attracts more clicks. Together, these findings suggest that the most effective headlines convey some amount of information – but not too much.
 
-In the case of Upworthy, we find an asymmetric relationship. Our model predicts that only 8.7% of headlines published by Upworthy would benefit from being more concrete, versus predicting that for 50.9% of headlines, increasing concreteness would significantly decrease clickthrough rates. However, Upworthy's audience is likely to have a penchant for clickbait-style headlines, so we can't assume this will be the case for all publishers.
+In our dataset, we find an asymmetric relationship. These findings are based on a dataset from the publisher [Upworthy](https://www.upworthy.com), who are known for this kind of curiosity gap headline. Our model predicts that only 8.7% of headlines published by Upworthy would benefit from being more concrete, versus predicting that for 50.9% of headlines, increasing concreteness would significantly decrease clickthrough rates. However, Upworthy's audience is likely to have a penchant for clickbait-style headlines, so we can't assume this asymmetry will exist for all publishers.
 
 ![Figure of effects of headline concreteness changing from positive to negative as average test concreteness increases.](assets/images/goldilocks.png)
 
-
 ## How we did it
 
-The most novel part of our analysis is that we introduce a metric we call **sentence concreteness**. This metric is based on a [dictionary developed by other scholars](https://link.springer.com/article/10.3758/s13428-013-0403-5) that maps individual words to a human-assigned concreteness score. For our measure, we simply take the average of all concreteness words in a sentence. We additionally assume that entities, such as celebrity names or specific places, should be counted as highly concrete. This metric was validated by human crowdworkers.
+The most novel part of our analysis is a new metric we call **sentence concreteness**. This metric is based on a [dictionary developed by other scholars](https://link.springer.com/article/10.3758/s13428-013-0403-5) that maps individual words to a human-assigned concreteness score. For our measure, we simply take the average of all concreteness words in a sentence. We additionally assume that entities, such as celebrity names or specific places, should be counted as highly concrete. This metric was validated by human crowdworkers. The following figure shows this process in detail:
 
 ![Figure of how we assigned the concreteness metric](assets/images/concreteness-metric.png)
 
@@ -49,7 +48,7 @@ Once we know how concrete each headline is, we run our main analysis. Since head
 For a more detailed explanation, [refer to the paper](TBD).
 
 ## Can I use the concreteness metric in my work?
-Yes! We have made a [public python library](https://github.com/maubinle/sentence_concreteness) available for use by researchers and news organizations. You can import this metric using pip and use it to label any sentence with a continuous scale of concreteness. If you do use this metric, please cite our work:
+Yes! We have made a [public python library](https://github.com/maubinle/sentence_concreteness) available for use by researchers and news organizations. You can import this metric using `pip` and label any sentence with a continuous scale of concreteness. If you do use this metric, please cite our work:
 
 > Aubin Le Quéré, M., and Matias, J.N. (2024) **[When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions](TBD).** Nature Scientific Reports.
 
