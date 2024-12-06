@@ -1,8 +1,8 @@
 title: Sentence Concreteness
 description: How much information should a headline reveal?
 logo: /assets/images/concreteness-logo.jpg
+cornelltechlogo: /assets/images/cornell-tech-logo.png
 cornelllogo: /assets/images/cornell-cals-logo.png
-psulogo: /assets/images/psu-college-liberal-arts.png
 theme: jekyll-theme-minimal
 twitter:
   card: summary_large_image
