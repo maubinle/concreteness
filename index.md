@@ -35,13 +35,14 @@ So, do these curiosity techniques actually work for attracting more clicks? Shou
 
 In the case of Upworthy, we find an asymmetric relationship. Our model predicts that only 8.7% of headlines published by Upworthy would benefit from being more concrete, versus predicting that for 50.9% of headlines, increasing concreteness would significantly decrease clickthrough rates. However, Upworthy's audience is likely to have a penchant for clickbait-style headlines, so we can't assume this will be the case for all publishers.
 
-INSERT FIGURE
+![Figure of effects of headline concreteness changing from positive to negative as average test concreteness increases.](assets/images/goldilocks.png)
+
 
 ## How we did it
 
 The most novel part of our analysis is that we introduce a metric we call **sentence concreteness**. This metric is based on a [dictionary developed by other scholars](https://link.springer.com/article/10.3758/s13428-013-0403-5) that maps individual words to a human-assigned concreteness score. For our measure, we simply take the average of all concreteness words in a sentence. We additionally assume that entities, such as celebrity names or specific places, should be counted as highly concrete. This metric was validated by human crowdworkers.
 
-INSERT FIGURE
+![Figure of how we assigned the concreteness metric](assets/images/concreteness-metric.png)
 
 Once we know how concrete each headline is, we run our main analysis. Since headlines were tested against each other, we can use this data to predict which headline will perform better, based on its concreteness. We model this effect of headline concreteness at different levels of average concreteness, and show conclusively that the effect goes from significantly positive to significantly negative.
 
@@ -51,3 +52,10 @@ For a more detailed explanation, [refer to the paper](TBD).
 Yes! We have made a [public python library](https://github.com/maubinle/sentence_concreteness) available for use by researchers and news organizations. You can import this metric using pip and use it to label any sentence with a continuous scale of concreteness. If you do use this metric, please cite our work:
 
 > Aubin Le Quéré, M., and Matias, J.N. (2024) **[When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions](TBD).** Nature Scientific Reports.
+
+## Acknowledgements
+Marianne and Nathan are incredibly grateful to those who have helped this project come to fruition.
+* Mor Naaman
+* Kevin Munger
+* Good/Upworthy
+* David Mimno
