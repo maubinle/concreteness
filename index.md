@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Upworthy Research Archive
-image: /assets/images/upworthy-archive-logo-orange-grey.png
+image: /assets/images/concreteness-logo.jpg
 ---
 
 # When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions
@@ -17,6 +17,7 @@ image: /assets/images/upworthy-archive-logo-orange-grey.png
 * Aubin Le Quéré, M., and Matias, J.N. (2024) **[When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions](TBD).** Nature Scientific Reports.
 * [Use the concreteness metric in your own work](https://github.com/maubinle/sentence_concreteness)
 * [Original Dataset](https://www.nature.com/articles/s41597-021-00934-7)
+* [Preregistration and code](https://osf.io/fbzvw/)
 
 ## The curiosity gap, in action
 
