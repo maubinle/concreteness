@@ -7,17 +7,17 @@ image: /assets/images/concreteness-logo.jpg
 # When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions
 
 * [Marianne Aubin Le Quéré](https://mariannealq.com/), *Cornell University*
-* [J. Nathan Matias](https://natematias.com), *Cornell University* (ongoing contact)
-
-> “The curiosity gap: too vague, and I don’t care, but too specific, and I don’t need to click the link.” – [Peter Koechley, co-founder of Upworthy](https://civic.mit.edu/index.html%3Fp=1340.html)
+* [J. Nathan Matias](https://natematias.com), *Cornell University*
 
 **How much information should a headline reveal?** Our research suggests that there is a sweet spot: headlines that are too concrete or too vague lead to fewer clicks. Using nearly 9,000 experiments, we show how headline wording shapes online attention and economics. This research marks the first time this "curiosity gap" is empirically demonstrated to be effective using data from a field experiment.
 
+> “The curiosity gap: too vague, and I don’t care, but too specific, and I don’t need to click the link.” – [Peter Koechley, co-founder of Upworthy](https://civic.mit.edu/index.html%3Fp=1340.html)
+
 ## Citation and Resources:
-* Aubin Le Quéré, M., and Matias, J.N. (2024) **[When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions](TBD).** Nature Scientific Reports.
+* Aubin Le Quéré, M., and Matias, J.N. (2024) **[When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions](https://www.nature.com/articles/s41598-024-81575-9).** Nature Scientific Reports.
 * [Use the concreteness metric in your own work](https://github.com/maubinle/sentence_concreteness)
 * [Original Dataset](https://www.nature.com/articles/s41597-021-00934-7)
-* [Preregistration and code](https://osf.io/fbzvw/)
+* [Preregistration](https://osf.io/fbzvw/)
 
 ## The curiosity gap, in action
 
@@ -45,7 +45,7 @@ The most novel part of our analysis is a new metric we call **sentence concreten
 
 Once we know how concrete each headline is, we run our main analysis. Since headlines were tested against each other, we can use this data to predict which headline will perform better, based on its concreteness. We model this effect of headline concreteness at different levels of average concreteness, and show conclusively that the effect goes from significantly positive to significantly negative.
 
-For a more detailed explanation, [refer to the paper](TBD).
+For a more detailed explanation, [refer to the paper](https://www.nature.com/articles/s41598-024-81575-9).
 
 ## Can I use the concreteness metric in my work?
 Yes! We have made a [public python library](https://github.com/maubinle/sentence_concreteness) available for use by researchers and news organizations. You can import this metric using `pip` and label any sentence with a continuous scale of concreteness. If you do use this metric, please cite our work:
@@ -56,5 +56,6 @@ Yes! We have made a [public python library](https://github.com/maubinle/sentence
 Marianne and Nathan are incredibly grateful to those who have helped this project come to fruition.
 * Mor Naaman
 * Kevin Munger
+* David Karpf
 * Good/Upworthy
 * David Mimno
